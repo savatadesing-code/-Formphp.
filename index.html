@@ -1,7 +1,25 @@
-<form action="datos.php" method="POST">
-    Nombre: <input type="text" name="nombre"><br>
-    Edad: <input type="number" name="edad"><br>
-    Dirección: <input type="text" name="direccion"><br>
-    Salario: <input type="text" name="salario"><br>
-    <input type="submit" value="Enviar">
-</form>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Empleado</title>
+</head>
+<body>
+    <h2>Formulario de Empleado</h2>
+    <form action="datos.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" required><br><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" name="direccion" id="direccion" required><br><br>
+
+        <label for="salario">Salario:</label>
+        <input type="text" name="salario" id="salario" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
