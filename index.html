@@ -2,23 +2,17 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Formulario de Empleado</title>
+    <title>Formulario Empleados</title>
 </head>
 <body>
-    <h2>Formulario de Empleado</h2>
-    <form action="datos.php" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" required><br><br>
-
-        <label for="edad">Edad:</label>
-        <input type="number" name="edad" id="edad" required><br><br>
-
-        <label for="direccion">Dirección:</label>
-        <input type="text" name="direccion" id="direccion" required><br><br>
-
-        <label for="salario">Salario:</label>
-        <input type="text" name="salario" id="salario" required><br><br>
-
+    <h2>Registro de Empleado</h2>
+    <form action="informacion.php" method="POST">
+        Nombre: <input type="text" name="nombre" required><br>
+        Edad: <input type="number" name="edad" required><br>
+        Correo: <input type="email" name="correo" required><br>
+        Dirección: <input type="text" name="direccion" required><br>
+        Cargo: <input type="text" name="cargo" required><br>
+        Salario: <input type="number" name="salario" required><br>
         <input type="submit" value="Enviar">
     </form>
 </body>
