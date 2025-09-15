@@ -1,20 +1,18 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $nombre = $_POST["nombre"];
-    $edad = $_POST["edad"];
-    $correo = $_POST["correo"];
-    $direccion = $_POST["direccion"];
-    $cargo = $_POST["cargo"];
-    $salario = $_POST["salario"];
+// Captura de datos desde el formulario con método POST
+$nombre = $_POST['nombre'];
+$edad = $_POST['edad'];
+$direccion = $_POST['direccion'];
+$salario = $_POST['salario'];
+$correo = $_POST['correo'];
+$cargo = $_POST['cargo'];
 
-    echo "<h2>Datos recibidos:</h2>";
-    echo "Nombre: " . htmlspecialchars($nombre) . "<br>";
-    echo "Edad: " . htmlspecialchars($edad) . "<br>";
-    echo "Correo: " . htmlspecialchars($correo) . "<br>";
-    echo "Dirección: " . htmlspecialchars($direccion) . "<br>";
-    echo "Cargo: " . htmlspecialchars($cargo) . "<br>";
-    echo "Salario: " . htmlspecialchars($salario) . "<br>";
-} else {
-    echo "No se enviaron datos.";
-}
+// Mostrar los datos en pantalla
+echo "<h2>Información del Empleado</h2>";
+echo "<p><strong>Nombre:</strong> $nombre</p>";
+echo "<p><strong>Edad:</strong> $edad</p>";
+echo "<p><strong>Dirección:</strong> $direccion</p>";
+echo "<p><strong>Salario:</strong> $$salario</p>";
+echo "<p><strong>Correo:</strong> $correo</p>";
+echo "<p><strong>Cargo:</strong> $cargo</p>";
 ?>
