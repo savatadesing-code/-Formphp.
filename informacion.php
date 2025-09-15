@@ -1,4 +1,7 @@
 <?php
+// Asegurar que el navegador use UTF-8
+header("Content-Type: text/html; charset=UTF-8");
+
 // Captura de datos desde el formulario con método POST
 $nombre = $_POST['nombre'];
 $edad = $_POST['edad'];
